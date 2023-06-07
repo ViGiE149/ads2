@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>SIGN UP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h1>RIZZ</h1>
+  <form (ngSubmit)="signUp()" class="registration-form">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person-add"></ion-icon>
+        <ion-input [(ngModel)]="_name" name="name" type="text" placeholder="Name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <ion-input [(ngModel)]="surname" name="surname" type="text" placeholder="Surname"></ion-input>
+      </ion-item>
+    <!--
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <ion-input [(ngModel)]="username" name="username" type="text" placeholder="Username"></ion-input>
+      </ion-item>
+-->
+      <ion-item>
+        <ion-icon name="mail"></ion-icon>
+        <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+<!--
+      <ion-item>
+        <ion-icon name="call"></ion-icon>
+        <ion-input [(ngModel)]="contact" name="contact" type="text" placeholder="Contact"></ion-input>
+      </ion-item>
+-->
+      <ion-item>
+        <ion-icon name="lock-closed"></ion-icon>
+        <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="lock-closed"></ion-icon>
+        <ion-input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div class="btns">
+      <ion-button type="submit">Sign Up</ion-button>&nbsp;
+      <span>
+        <ion-button class="sIn" fill="outline" routerLink="/sign-in">Sign In</ion-button><br><br>
+      </span>
+    </div>
+  </form>
+</ion-content>

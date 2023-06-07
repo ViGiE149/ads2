@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>SIGN IN</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="signIn()">
+  <div class="container">
+
+<ion-list>
+  
+  <h1>RIZZ</h1>
+   <ion-item>
+     <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email"> <ion-icon name="mail"></ion-icon></ion-input>
+   </ion-item>
+
+ <ion-item>
+   <ion-input  [(ngModel)]="password" name="password" type="password" placeholder="Password"><ion-icon name="lock-closed"></ion-icon></ion-input>
+ </ion-item>
+
+ <p>forgot password : <span routerLink="/reset">click here</span></p>
+<br>
+ <div class="btns">
+  <ion-button fill="outline" routerLink="/sign-up" >Sign UP</ion-button>
+  <span>&nbsp;&nbsp; &nbsp;
+  <ion-button type="submit">Sign IN</ion-button><br><br>
+  </span>
+  </div>
+
+  <br>
+</ion-list>
+<div class="fingerPrint">
+    <ion-icon name="log-in-outline" style="zoom:6" ></ion-icon>
+
+</div>
+</div>
+</form>
+</ion-content>

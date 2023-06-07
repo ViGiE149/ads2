@@ -1,0 +1,49 @@
+ion-content {
+  --background: linear-gradient(180deg, #203A43, #2C5364);
+}
+
+h1 {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:  rgba(black, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+ion-button {
+  --background: #1ABC9C;
+  --border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+ion-button.join-btn {
+  --background: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+ion-button.join-btn:hover {
+  --background: #FFFFFF;
+  color: #1ABC9C;
+}

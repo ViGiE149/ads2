@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>reset password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+ <h1><strong>RIZZ</strong></h1>
+ <form  (ngSubmit)="reset()">
+   <ion-item>
+     <ion-icon name="mail"></ion-icon>
+     <ion-input  [(ngModel)]="email" name="reset" type="email" placeholder="Email"></ion-input>
+   </ion-item>
+
+
+<div class="btns">
+  
+<ion-button expand="block" type="submit" >Reset</ion-button><br>
+<ion-button class="bn" expand="block"   fill="outline" routerLink="/sign-up" >Sign UP</ion-button><br>
+
+<span>
+<ion-button class="bn" expand="block"  fill="outline"  routerLink="/sign-in" >Sign IN</ion-button><br><br>
+</span>
+
+</div>
+</form>
+</div>
+</ion-content>
